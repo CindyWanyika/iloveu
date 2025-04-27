@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins","sans-serif";
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: #5A4632; /* A rich brown for contrast */
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+
+}
+
+
+
+#home{
+    width: 100%;
+    height:100vh;
+    background-image: url(philipcol.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.top {
+    overflow: hidden;
+    background-color: #ffffff;
+}
+  
+  /* Style the topnav links */
+.top a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change color on hover */
+.top a:hover {
+    background-color: rgb(255, 252, 252);
+    color: rgb(0, 0, 0);
+}
+
+
+
+.home-content h1{
+    margin-top: 150px;
+    margin-bottom: 1rem;
+    font-size:62px;
+    font-weight: 800;
+    line-height: 5.5rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+
+}
+.home-content p{
+    margin-bottom: 2rem;
+    line-height: 1.75rem;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    font-family: cursive;
+    color: #ffffff;
+}
+
+#page h1{
+    margin-top: 2%;
+    font-size:62px;
+    font-weight: 400;
+    line-height: 5.5rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contain{
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+    flex-wrap: nowrap;
+    gap: 30px;  
+
+}
+
+.text1{
+    flex-basis: 20%;
+    margin-top: 15%;
+}
+
+.pic1{
+    flex-basis: 38%;
+}
+
+.pic1 img{
+    width: 80%;
+    height: 80%;
+}
+
+.pic2{
+    flex-basis: 38%;
+}
+
+.pic2 img{
+    width: 80%;
+    height: 80%;
+}
+
+
+#gallery h1{
+    margin-top: 2%;
+    font-size:62px;
+    font-weight: 400;
+    line-height: 5.5rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.horizontal-scroll-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 20px;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    width: 300px; /* or however wide you want each item */
+    scroll-snap-align: start;
+}
+
+.scroll-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.horizontal-scroll-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+
+
+#video{
+    width: 100%;
+    height:100vh;
+    background-color: #ffffff;
+
+}
+
+p{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.videopage{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+    flex-wrap: nowrap;  
+    gap: 20px;
+
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: #A67B5B; 
+    width: 100%; 
+}
+
+.v1{
+    margin-top: 50px;
+    flex-basis: 45%;
+    background-color: rgb(173, 136, 106);
+    background-size: cover;
+    margin-left: 10px;
+
+}
+
+.v2{
+    flex-basis: 50%;
+}
+.v2 p{
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+}
+
+.v2 a{
+    margin-top: 30px;
+    display: inline-block;
+    background: #06d85e;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 14px 20px;
+}
+
+
+
+/* Make images stack on smaller screens */
+@media (max-width: 768px) {
+
+    .container, .contain, .videopage {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .collage1, .collage2, .collage3, .collage4,
+    .pic1, .pic2,
+    .v1, .v2 {
+      flex-basis: 100%;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .collage1 img, .collage2 img, .collage3 img, .collage4 img,
+    .pic1 img, .pic2 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .text1 {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+  }
+  

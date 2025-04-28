@@ -192,6 +192,17 @@ hr {
 
 }
 
+.v1 a{
+    margin: 20px;
+    display: inline-block;
+    background: #f90202;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 14px 20px;
+}
+
 .v2{
     flex-basis: 50%;
 }
@@ -201,7 +212,7 @@ hr {
 
 }
 
-.v1 a{
+.v2 a{
     margin-top: 30px;
     display: inline-block;
     background: #06d85e;

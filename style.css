@@ -192,6 +192,10 @@ hr {
     margin-left: 10px;
 
 }
+.v1 video{
+    width: 90%;
+    height: 90%;
+}
 
 .v2{
     flex-basis: 50%;
